@@ -8,7 +8,7 @@
     "Polyfrost", "anolithme"
   ],
   "license": "AGPL-3.0-or-later",
-  "icon": "assets/autotext/icon.png",
+  "icon": "icon.png",
   "environment": "client",
   "entrypoints": {
     "client": [
