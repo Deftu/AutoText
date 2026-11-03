@@ -1,27 +1,30 @@
 # Auto Text
 
-Fabric mod for Minecraft 1.8.9 (Ornithe), 1.21.1, 1.21.4, 1.21.5, 1.21.8, 1.21.10, 1.21.11, 26.1, 26.2 and 26.3.
+Auto Text sends a saved chat message or command when you press a key. If you'd rather check the text first, it can open chat with the message already typed in.
 
-Built with [Stonecutter](https://stonecutter.kikugie.dev/). Gradle downloads the JDKs it needs (21 and 25).
+![Macro list](.github/images/macros.png)
 
-## Build
+- Up to 100 macros, each with its own keybind
+- Bind a key, a combo with Ctrl, Shift or Alt, or a mouse button
+- "Send immediately" or "Prefill chat" for each macro
+- Turn a single macro off without deleting it, or switch them all off at once
+- Drag macros to reorder them
+- Duplicate a macro to make a variant of it
 
-macOS / Linux:
+Macros only run in game with no screen open, and only once per press. Two macros on the same keybind won't run at all, so give each one its own.
 
-```sh
-./gradlew build
-```
+You can use `/autotext` to open your macros.
 
-Windows:
+On Hypixel, messages and chat commands like `/pc` or `/msg` only work with "Prefill chat". Other commands, such as `/play`, still send right away.
 
-```bat
-gradlew.bat build
-```
+## Supported versions
 
-Builds every version. To build one, run `./gradlew :1.21.11:build`.
+- Minecraft 1.8.9 on Ornithe.
+- Minecraft 1.21.1-26.3 on Fabric.
 
-Output: `versions/<minecraft version>/build/libs/autotext-0.1.0+<minecraft version>.jar`.
+Auto Text needs [OneConfig](https://modrinth.com/mod/oneconfig).
 
-Runtime dependencies: Fabric Loader, Fabric Language Kotlin and OneConfig v1, as listed in `fabric.mod.json`.
+## Support
 
-License: AGPL-3.0-or-later; see `LICENSE`.
+- Report bugs and ask questions on the [Polyfrost Discord](https://polyfrost.org/discord).
+- Check [Polyfrost Status](https://status.polyfrost.org/) if a Polyfrost service is down.
