@@ -12,8 +12,9 @@ import org.polyfrost.oneconfig.api.config.v1.Property
 import org.polyfrost.oneconfig.api.config.v1.Tree
 import org.polyfrost.oneconfig.api.config.v1.Visualizer.SwitchVisualizer
 
+// FIXME: OneConfig mod card is solid blue when using the translation key (1.8.9 only)
 object AutoTextConfig : Config(
-    "autotext.json", "assets/autotext/autotext_dark.svg", "autotext.name", Category.QOL,
+    "autotext.json", "assets/autotext/autotext_dark.svg", "Auto Text", Category.QOL,
 ) {
     private val logger = LogManager.getLogger("AutoText/Config")
 
